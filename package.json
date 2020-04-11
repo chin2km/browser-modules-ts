@@ -5,17 +5,20 @@
   "main": "index.js",
   "scripts": {
     "compile": "tsc -w",
-    "exec": "nodemon build/index.js",
-    "start": "concurrently 'npm:compile' 'npm:exec'"
+    "serve": "http-server",
+    "start": "concurrently 'npm:compile' 'npm:serve'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "http-server": "^0.12.1",
+    "moment": "^2.24.0",
     "nodemon": "^2.0.3",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "@types/moment": "^2.13.0",
+    "concurrently": "^5.1.0",
+    "npm-run-all": "^4.1.5"
   }
 }
