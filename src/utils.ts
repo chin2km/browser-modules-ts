@@ -1,0 +1,1 @@
+export const addAll = (...rgs: number[]) => rgs.reduce((acc, x) => acc+x, 0)

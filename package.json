@@ -1,0 +1,21 @@
+{
+  "name": "css-tuto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc -w",
+    "exec": "nodemon build/index.js",
+    "start": "concurrently 'npm:compile' 'npm:exec'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.1",
+    "nodemon": "^2.0.3",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
